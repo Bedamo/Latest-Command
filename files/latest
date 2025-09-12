@@ -1,0 +1,41 @@
+#!/bin/bash
+
+latest() {
+    if [[ -z "${1:-}" ]]; then
+        echo "usage: latest <package-name>"
+        return 2
+    fi
+    pkg="$1"
+
+    # get lines like: repo|pkg|version
+    matches=$(pacman -Sl 2>/dev/null | awk -v p="$pkg" '$2 == p {print $1 "|" $2 "|" $3}')
+    if [[ -z "$matches" ]]; then
+        echo "Package '$pkg' not found in any sync repo"
+        return 1
+    fi
+
+    best_repo=""
+    best_ver=""
+
+    while IFS='|' read -r repo name ver; do
+        # initialize or replace if current ver is greater
+        if [[ -z "$best_ver" ]]; then
+            best_repo="$repo"
+            best_ver="$ver"
+        else
+            # compare versions using sort -V (version sort)
+            # if ver is greater than best_ver, update
+            if [[ $(printf '%s\n%s\n' "$best_ver" "$ver" | sort -V | tail -n1) == "$ver" ]] && [[ "$ver" != "$best_ver" ]]; then
+                best_repo="$repo"
+                best_ver="$ver"
+            fi
+        fi
+    done <<< "$matches"
+
+    pkg_spec="$best_repo/$pkg"
+    echo "Installing $pkg_spec (version $best_ver)"
+    paru -S --needed "$pkg_spec"
+}
+
+# Call the function with the first argument passed to the script
+latest "$1"
