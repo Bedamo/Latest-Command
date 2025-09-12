@@ -4,7 +4,7 @@
 . Make the program executable
 
 ```
-sudo chmod 755 /bin/latest
+sudo chmod +x /bin/latest
 ```
 
 ## How to Use
